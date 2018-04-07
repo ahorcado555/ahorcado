@@ -16,7 +16,7 @@ class DiccionarioAhorcado
 		@arregloPalabras[@numeroAleatorio]
 	end
 
-	def definirNumeroAleatorio numero = rand(3)
+	def definirNumeroAleatorio numero = rand(@arregloPalabras.length)
 		@numeroAleatorio = numero
 	end 
 end
