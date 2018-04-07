@@ -15,11 +15,12 @@ describe DiccionarioAhorcado do
 	it "Obtener Guiones botella" do
 		arrayPalabra = DiccionarioAhorcado.new
 		guiones = arrayPalabra.obtenerPalabraGuion "botella"
-		expect(guiones).to eq "_ _ _ _ _ _ _ "
+		expect(guiones).to include "_ "
 	end	
-		it "Obtener Guiones empresarial" do
+
+	it "Obtener _ a _ a _ _ a _ al validar a" do
 		arrayPalabra = DiccionarioAhorcado.new
-		guiones = arrayPalabra.obtenerPalabraGuion "empresarial"
-		expect(guiones).to eq "_ _ _ _ _ _ _ _ _ _ _ "
+		guiones = arrayPalabra.validarLetra "a", "palabra1"
+		expect(guiones).to eq " _ a _ a _ _ a _ "
 	end	
 end
