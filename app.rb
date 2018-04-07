@@ -1,9 +1,13 @@
 require 'sinatra'
 require './config'
+require './lib/DiccionarioAhorcado'
 
 get '/' do
-	session["botella"] = "_ _ _ _ _ _ _"
-	session["empresarial"] = "_ _ _ _ _ _ _ _ _ _ _"
+	palabraSecreta = DiccionarioAhorcado.new
+	palabraSecreta.definirNumeroAleatorio 1
+	word = palabraSecreta.obtenerPalabra
+	guiones = palabraSecreta.obtenerPalabraGuion word
+	session["palabraSecreta"] = guiones
 	erb :index
 
 end

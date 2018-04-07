@@ -16,6 +16,15 @@ class DiccionarioAhorcado
 		@arregloPalabras[@numeroAleatorio]
 	end
 
+	def obtenerPalabraGuion palabra
+		strGuion = ""
+		palabraArr = palabra.to_s.chars.map(&:to_i)
+		palabraArr.each do |caracter|
+			strGuion += "_ "
+		end
+		return strGuion
+	end
+
 	def definirNumeroAleatorio numero = rand(@arregloPalabras.length)
 		@numeroAleatorio = numero
 	end 

@@ -6,14 +6,14 @@ Característica:
 
 Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
 	Dado inicie la app
-	Y la palabra secreta es "botella" en el campo "secreto"
-	Entonces debo ver "_ _ _ _ _ _ _"
+	Y la palabra secreta es "palabra1" en el campo "secreto"
+	Entonces debo ver "_ _ _ _ _ _ _ _"
 
 
-Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
-	Dado inicie la app
-	Y la palabra secreta es "empresarial" en el campo "secreto"
-	Entonces debo ver "_ _ _ _ _ _ _ _ _ _ _"
+#Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
+#	Dado inicie la app
+#	Y la palabra secreta es "empresarial" en el campo "secreto"
+#	Entonces debo ver "_ _ _ _ _ _ _ _ _ _ _"
 
 #Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
 #	Dado inicie la app
