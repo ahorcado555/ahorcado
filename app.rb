@@ -11,3 +11,8 @@ get '/' do
 	erb :index
 
 end
+
+post '/validarLetra' do
+	palabraSecreta = DiccionarioAhorcado.new
+	respuesta = palabraSecreta.validarLetra params['letra'] , "palabra1"
+end
