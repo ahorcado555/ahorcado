@@ -10,10 +10,10 @@ Escenario: Los espacios conciden con el numero de caracteres de la palabra secre
 	Entonces debo ver "_ _ _ _ _ _ _"
 
 
-#Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
-#	Dado inicie la app
-#	Y la palabra secreta es "empresarial" en el campo "secreto"
-#	Entonces debo ver "_ _ _ _ _ _ _ _ _ _ _"
+Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
+	Dado inicie la app
+	Y la palabra secreta es "empresarial" en el campo "secreto"
+	Entonces debo ver "_ _ _ _ _ _ _ _ _ _ _"
 
 #Escenario: Los espacios conciden con el numero de caracteres de la palabra secreta
 #	Dado inicie la app
