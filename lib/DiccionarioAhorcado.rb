@@ -13,8 +13,16 @@ class DiccionarioAhorcado
 	end
 
 	def validarLetra letra, word
-
-		 " _ a _ a _ _ a _ "
+		strGuion = ""
+		palabraArr = word.to_s.chars.map(&:to_s)
+		palabraArr.each do |valor|
+			if  valor == letra
+				strGuion += "#{letra} "
+			else
+				strGuion += "_ "
+			end
+		end
+		return strGuion
 	end
 
 	def obtenerPalabra
