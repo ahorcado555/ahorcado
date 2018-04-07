@@ -12,6 +12,11 @@ class DiccionarioAhorcado
 		return strPalabra
 	end
 
+	def validarLetra letra, word
+
+		 " _ a _ a _ _ a _ "
+	end
+
 	def obtenerPalabra
 		@arregloPalabras[@numeroAleatorio]
 	end
